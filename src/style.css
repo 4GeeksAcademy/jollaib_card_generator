@@ -1,1 +1,39 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#background {
+  height: 100vh;
+  padding: 100px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 28px;
+  position: absolute;
+}
+#top-icon {
+  left: 20px;
+  top: 10px;
+  position: absolute;
+}
+#number {
+  font-size: 200px;
+  text-align: center;
+}
+#bottom-icon {
+  text-align: end;
+}
+
+.palo {
+  color: red;
+  font-size: 75px;
+}
+
+.btn {
+  width: 200px;
+  right: 20px;
+  border-radius: 10px;
+}
+
+.input-group {
+  width: 350px;
+}

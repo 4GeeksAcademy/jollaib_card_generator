@@ -10,19 +10,51 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body bg-success>
+    <div id="background" class="container-fluid bg-success">
+      <div class="row d-flex justify-content-between ">
+        <div class="card  mx-5" id="pokerCard">
+          <div class="row h-100 w-100">
+            <div class="col align-self-start">
+              <p class="palo" id="top-icon"></p>
+            </div>
+            <div class="col align-self-center">
+              <p id="number">4</p>
+            </div>
+            <div class="col align-self-end">
+              <p class="palo" id="bottom-icon"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column justify-content-end align-items-end">
+          <button id="changeCardButton" type="button" class="btn btn-primary">
+            Change Card
+          </button>
+          <button id="timerButton" class="btn btn-danger my-4">
+            Start Timer
+          </button>
+          <div class="input-group" id="inputs">
+            <span class="input-group-text">Height and Width(pixels)</span>
+            <input
+              id="heightInput"
+              type="text"
+              aria-label="First name"
+              class="form-control"
+            />
+            <input
+              id="widthInput"
+              type="text"
+              aria-label="Last name"
+              class="form-control"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </body>
